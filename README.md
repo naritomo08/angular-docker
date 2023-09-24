@@ -2,6 +2,10 @@
 
 angular環境を立ち上げることができます。
 
+## 参考URL
+
+[Angular環境構築手順（Docker上に構築する）](https://shiraberu.tech/2021/11/24/angular-setup-on-docker/)
+
 ## 事前準備
 
 mac+DockerCompose+vscode+gitでの環境を構築してること。
@@ -21,6 +25,8 @@ cd angular-docker
 
 ```bash
 docker-compose build
+docker-compose run --rm sample-angular sh -c "npm install"
+→上記コマンドは初回のみ
 docker-compose up -d
 ```
 
